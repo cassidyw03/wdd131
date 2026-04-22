@@ -1,0 +1,65 @@
+body {
+    font-size: 17px;
+    padding: 40px;
+    font-family:'TImes New Roman', Times, serif;
+    margin: 0 auto;
+   
+}
+
+#content {
+    max-width: 510px;
+    min-width: 510px;
+    border: 1px solid darkgrey;
+    margin: 40 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+
+header {
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-weight: 540;
+    font-size: 35px;
+}
+
+h2 {
+    color: #3469a9;
+    font-size: .9em;
+}
+
+hr {
+    height: 0.3px;
+    background-color: lightgray;
+    width: 100%;
+    margin-top: -12px;
+}
+
+p, ol {
+    text-align: left;
+}
+
+ol {
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+main {
+    margin-top: 40px;
+}
+
+.italics {
+    font-style: italic;
+}
+
+img {
+    width: 23%;
+    display: block;
+    margin: 50px auto;
+}
