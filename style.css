@@ -13,3 +13,8 @@ body{
     text-align: left;
     line-height: 40px;
 }
+
+.background {
+    background-color: black;
+    color: white;
+}
