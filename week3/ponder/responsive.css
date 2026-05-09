@@ -4,8 +4,9 @@
 body {
     margin: 0;
     padding: 0;
-  font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
 }
+
 header,
 main,
 footer {
@@ -15,35 +16,59 @@ footer {
   padding: 1rem;
   background-color: lightblue;
 }
+
 h1 {
     text-align: center;
 }
+
 section {
   padding: 20px;
   background-color: white;
   margin: 1em;
   border: 1px solid #ccc;
 }
+
 nav a {
     padding: 20px;
     color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid grey;
+}
+
+.hide {
     display: none;
 }
+
 nav a:hover {
     text-decoration: none;
     color: #616061;
 }
+
 .menu-btn {
     cursor: pointer;
     border: none;
     background-color: transparent;
 }
+
 .bar1, .bar2, .bar3 {
     width: 30px;
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: .4s;
 }
+
+.change .bar1 {
+  transform: translate(0, 8.5px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -8.5px) rotate(45deg);
+}
+          
 footer {
     text-align: center;
 }
@@ -60,12 +85,18 @@ footer {
         display: none;
     }
 
-    nav a {
-        display: inline;
+    .hide {
+        display: block;
+        text-align: center;
     }
 
-    nav {
-        text-align: right;
+    nav a {
+        display: inline;
+        padding: 20px;
+        color: black;
+        font-size: 1rem;
+        text-decoration: none;
+        border: none;
     }
 }
       
@@ -73,6 +104,7 @@ footer {
         main {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    
 
 }
           
