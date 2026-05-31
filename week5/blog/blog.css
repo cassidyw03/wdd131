@@ -9,6 +9,7 @@ body {
 header, footer {
     padding: 1rem;
     text-align: center;
+    font-family: serif;
 }
 
 hr {
