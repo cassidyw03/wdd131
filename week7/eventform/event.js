@@ -34,20 +34,17 @@ updateIdField();
 
 
 // Ensure they choose a date later than the current date
-// function isPastDate(value) {
-//   const today = new Date();
-//   const chosen = new Date(value);
-//   return chosen < today;
-// }
 
 function isTodayOrPast(value) {
   const today = new Date();
-  today.setHours(0, 0, 0, 0); // strip the time → local midnight today
+  today.setHours(0, 0, 0, 0);
 
   const [year, month, day] = value.split("-").map(Number);
-  const chosen = new Date(year, month - 1, day); // local midnight of chosen date
+  const chosen = new Date(year, month - 1, day); 
+  // local midnight of chosen date
 
-  return chosen <= today; // reject today or earlier; allow tomorrow onward
+  return chosen <= today; 
+  // reject today or earlier; allow tomorrow onward
 }
 
 form.addEventListener("submit", function (event) {
@@ -77,11 +74,6 @@ if (type === "guest" && !/^EVENT131$/.test(access)) {
 }
 
 const typeDisplay = type.charAt(0).toUpperCase() + type.slice(1);
-
-// if (isPastDate(eventDate)) {
-//     output.textContent = "Please choose a later date.";
-// return;
-// }
 
 if (isTodayOrPast(eventDate)) {
   output.textContent = "Please choose a later date.";
