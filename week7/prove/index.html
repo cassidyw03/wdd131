@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Week 7 Ponder Counselor Preference Form" >
+  <meta name="author" content="Cassidy Whitehead">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Ticket Form</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="event.css">
+  <script src="event.js" defer></script>
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Event Ticket Form</h1>
+
+    <form id="eventForm">
+      <div class="field">
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="firstName" type="text" required>
+      </div>
+
+      <div class="field">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="lastName" type="text" required>
+      </div>
+
+      <div class="field full">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="field">
+        <label for="personType">Type</label>
+        <select
+          id="personType"
+          name="personType"
+          aria-controls="notesContainer"
+          required
+        >
+          <option value="">Choose one</option>
+          <option value="student">Student</option>
+          <option value="guest">Guest</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="eventDate">Event Date</label>
+        <input id="eventDate" name="eventDate" type="date" required>
+      </div>
+
+      <div id="idContainer" class="field full" hidden>
+        <label for="id">Student I#</label>
+        <input id="id" name="id" type="text">
+      </div>
+
+      <div id="accessCodeContainer" class="field full" hidden>
+        <label for="access">Access Code</label>
+        <input id="access" name="access" type="text">
+      </div>
+
+      <button class="full" type="submit">Submit Preferences</button>
+    </form>
+
+    <section id="output" aria-live="polite"></section>
+  </main>
+</body>
+</html>
+          
