@@ -83,6 +83,12 @@ main {
     padding: 1em 0 2em;
 }
 
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
 .recipe {
     display: flex;
     flex-direction: column;

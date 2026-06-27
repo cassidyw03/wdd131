@@ -34,6 +34,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="recipes.css">
+    <script src="recipes.js" defer></script>
 </head>
 <body>
 
@@ -43,7 +44,7 @@
             <h1>Recipe Book</h1>
         </div>
         <form class="search" action="#" method="get">
-            <input type="text" name="search" placeholder="Find a recipe" aria-label="Search recipes">
+            <input id="search" type="text" name="search" placeholder="Find a recipe" aria-label="Search recipes">
             <button type="submit" aria-label="Search">
                 <img src="images/search.svg" alt="">
             </button>
@@ -53,29 +54,9 @@
     <hr>
 
     <main>
-        <article class="recipe">
-            <img src="images/apple-crisp.jpg" alt="Apple crisp with ice cream" class="recipe-image">
+        <div class="recipe-container">
 
-            <div class="recipe-info">
-                <ul class="tags">
-                    <li>dessert</li>
-                </ul>
-
-                <h2 class="recipe-title">Apple Crisp</h2>
-
-                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-
-                <p class="recipe-description">
-                    This apple crisp recipe is a simple yet delicious dessert that's great served warm with vanilla ice cream.
-                </p>
-            </div>
-        </article>
+        </div>
     </main>
 
     <footer>
