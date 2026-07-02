@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+        <!-- One Apple Touch Icon (iOS home screen) -->
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+		<link type="text/css" rel="stylesheet" href="app-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Beady Babe Site Plan</h1>
+			<h2>Cassidy Whitehead</h2>
+			<h2>WDD 131.01</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			<!-- ------------------------Steps 2-3------------------------------ -->
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>This site is an online store for handmade, unique, and colorful jewelry products. It aims to showcase products and provide an easy way to buy them online. </p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>The site is meant to target women around 16-30 years old who gravitate towards colorful and vibrant fashion.</p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>The main JavaScript features will be:
+                <li>Filtering: clicking a filter button to see products based on price, category, or color.</li>
+                <li>Add product to cart: clicking a "add to cart" button will add it to an array for anything in the cart. I will also keep the amount of items in the cart counted visibly by the cart icon.</li>
+                <li>Search: typing in the search bar will filter products based on the name of the product.</li>
+                <li>Cart total: displaying the total cost of items in the cart.</li>
+            </p>
+			<!-- change this -->
+
+            <h3>Pseudocode - Computational Thinking</h3>
+            
+            <p>1. Create an array of objects for each product with properties like name, price, category, color, and id</p> 
+            <p>2. Create another empty array to be ready to hold added products to the cart.</p>
+            <p>3. Create function for rendering products list dynamically on each page.</p>
+            <p>4. Create function for filtering products with conditional branching, add event listener for on click events per filter.</p>
+            <p>5. Create function for adding to cart by finding the product in products array by id and pushing that to the cart array without changing the original product array. Also add click event listeners for the "add to cart" buttons.</p>
+            <p>6. Create function to update the cart display in the sidebar depending on items in cart. If cart is empty, display message saying so.</p>
+            <p>7. Create thumbnail images for each product to be in the cart vs how it sits on the product page.</p>
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+            <p class="logo">Beady Babe</p>
+            <h3>Favicon</h3>
+			<img src="images/favicon-32x32.png" alt="Logo Image" height="100px" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<!-- ------------------------Steps 4-8------------------------------ -->
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/a0d900-ff6e35-e3ed4b-729ea1-2f1406"
+				>https://coolors.co/a0d900-ff6e35-e3ed4b-729ea1-2f1406</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+                        <th>Accent 3</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#A0D900]</td>
+						<td class="secondary">[#FF6E35]</td>
+						<td class="accent1">[#E3ED4B]</td>
+						<td class="accent2">[#729EA1]</td>
+                        <td class="accent3">[#2F1406]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- ------------------------Step 9------------------------------ -->
+
+			<h3>Typography</h3>
+			<!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+			<h4>
+				Heading Font: Luckiest Guy
+				<!-- change this -->
+			</h4>
+			<h4>
+				Paragraph Font: Yuyu
+				<!-- change this -->
+			</h4>
+			<h3>Normal paragraph example</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+			<h3>Colored paragraph example</h3>
+			<p class="colored">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat.
+			</p>
+
+			<!-- ------------------------Step 10------------------------------ -->
+
+			<h3>Navigation</h3>
+			<!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Page2</a>
+				<a href="#">Page3</a>
+			</nav>
+			<hr />
+
+			<h2>Content</h2>
+			<h3>Home page</h3>
+			<p>Each page will require photos as this is a online store. </p>
+			<h3>Specific Product Pages for Necklaces, Bracelets, Rings</h3>
+			<p>Photos for each product will be displayed on their respective pages, or all on the "all jewerly page." All photos are from an open source site called Pexels.</p>
+            <p>
+                Example:
+            </p>
+            <img src="images/pexels-roo-1110882060-30130003.jpg" alt="bracelet example" height="200">
+			<h2>Wireframes</h2>
+			<p>
+				Create two wireframes for your site. One for each page and list them
+				here
+			</p>
+
+			<h3>Home</h3>
+			<p>
+				https://wireframe.cc/LvNkif
+			</p>
+            <p>
+                The cart will be a sidebar that will come from the right side of the page when the cart icon is clicked. The cart will display the items in the cart, the total cost, and a checkout button. After hitting the checkout button the user will be taken to a checkout page saying thank you for your order.
+			</p>
+
+			<h3>Browse Types Layout</h3>
+			<p>
+				https://wireframe.cc/1DEkth 
+			</p>
+            <p>
+                This is for All Jewelry, Necklaces, Bracelets, and Rings pages. The layout will be the same for all of these pages.
+            </p>
+
+		</main>
+	</body>
+</html>
