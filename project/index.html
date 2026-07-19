@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A Shopping Site for Handmade Jewelry">
+    <meta name="author" content="Cassidy Ilene Whitehead Mangum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Beady Babe">
+    <meta property="og:description" content="A Shopping Site for Handmade Jewelry">
+    <meta property="og:url" content="https://cassidyw03.github.io/wdd131/project/">
+    <meta property="og:image" content="https://cassidyw03.github.io/wdd131/project/images/social-preview.jpg">
+    <meta property="og:image:alt" content="A beaded bracelet with celestial star and moon charms on navy silk">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beady Babe">
+    <meta name="twitter:description" content="A Shopping Site for Handmade Jewelry">
+    <meta name="twitter:image" content="https://cassidyw03.github.io/wdd131/project/images/social-preview.jpg">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Luckiest+Guy&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Beady Babe</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo">Beady Babe</a>
+
+        <nav class="site-nav" aria-label="Main">
+            <a href="index.html" class="active">Home</a>
+            <button id="cart-toggle" class="cart-link" aria-label="Open cart">
+                Cart
+                <span id="cart-count" class="cart-count" aria-live="polite">0</span>
+            </button>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <img
+                src="images/opt/pexels-magda-ehlers-pexels-32568146.jpg"
+                alt="Rows of colorful handmade beaded ball necklaces"
+                width="1600" height="1200"
+                fetchpriority="high" decoding="async">
+
+            <div class="hero-text">
+                <h1>Handmade. Colorful. One of a kind.</h1>
+                <p>Beaded jewelry made uniquely for you.</p>
+            </div>
+
+        </section>
+
+        <section class="shop">
+
+            <h2>Shop All Jewelry</h2>
+            <p class="shop-hint">Tap a piece to see its price, details, and materials.</p>
+
+            <div class="shop-filter">
+                <label for="category-filter">Filter by type:</label>
+                <select id="category-filter">
+                    <option value="all">All Jewelry</option>
+                    <option value="necklace">Necklaces</option>
+                    <option value="bracelet">Bracelets</option>
+                    <option value="ring">Rings</option>
+                </select>
+                <label for="search">Search:</label>
+                <input type="search" id="search" placeholder="Search by name…">
+            </div>
+
+            <ul id="product-grid" class="product-grid">
+            </ul>
+
+        </section>
+    </main>
+
+    <div id="cart-overlay" class="cart-overlay hidden"></div>
+    <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping cart">
+
+        <div class="cart-drawer-head">
+            <h2>Your Cart</h2>
+            <button id="cart-close" class="cart-close" aria-label="Close cart">x</button>
+        </div>
+
+        <ul id="cart-items" class="cart-items"></ul>
+        <p id="cart-empty" class="cart-empty">Your cart is empty.</p>
+
+        <div class="cart-drawer-foot">
+            <p class="cart-total-row">Total: <span id="cart-total">$0.00</span></p>
+            <button id="checkout-btn" class="btn-checkout" type="button">Checkout</button>
+        </div>
+        
+    </aside>
+
+    <footer class="site-footer">
+        <p class="logo logo-footer">Beady Babe</p>
+        <p>&copy; <span id="year"></span> Cassidy Whitehead &middot; WDD 131</p>
+        <p class="site-footer-note">All jewelry photos from Pexels</p>
+    </footer>
+</body>
+</html>
